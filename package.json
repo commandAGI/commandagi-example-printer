@@ -1,0 +1,35 @@
+{
+  "name": "commandagi-example-printer",
+  "version": "0.1.0",
+  "description": "Connect a Marlin FDM 3D printer (Creality Ender 3 V3 SE and friends) to CommandAGI as a bring-your-own device.",
+  "type": "module",
+  "license": "MIT",
+  "author": "CommandAGI",
+  "homepage": "https://commandagi.com/docs/host",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commandAGI/commandagi-example-printer"
+  },
+  "bugs": {
+    "url": "https://github.com/commandAGI/commandagi-example-printer/issues"
+  },
+  "keywords": [
+    "commandagi",
+    "3d-printing",
+    "marlin",
+    "fdm",
+    "ender-3",
+    "serialport",
+    "robotics"
+  ],
+  "scripts": {
+    "start": "node src/index.mjs",
+    "check": "node --check src/index.mjs && node --check src/fdm.mjs"
+  },
+  "dependencies": {
+    "serialport": "^12"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
