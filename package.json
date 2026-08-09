@@ -8,10 +8,10 @@
   "homepage": "https://commandagi.com/docs/host",
   "repository": {
     "type": "git",
-    "url": "https://github.com/commandAGI/commandagi-example-printer"
+    "url": "https://github.com/CommandAGI/commandagi-example-printer"
   },
   "bugs": {
-    "url": "https://github.com/commandAGI/commandagi-example-printer/issues"
+    "url": "https://github.com/CommandAGI/commandagi-example-printer/issues"
   },
   "keywords": [
     "commandagi",
