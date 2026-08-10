@@ -11,7 +11,7 @@ status, goes online, and runs print jobs that come to it.
 It's intentionally minimal and dependency-light so you can read the whole integration
 in one sitting. A production deployment would use the first-party runtime (which also
 streams a camera and joins each job's realtime control plane) — this repo shows the
-*shape* of the connection in ~450 lines of plain Node.
+_shape_ of the connection in ~450 lines of plain Node.
 
 > [!WARNING]
 > **This software moves real hardware.** When it runs a job it will home the axes,
@@ -71,13 +71,13 @@ and it degrades honestly to **register + report-only** mode (no job running).
 
 ### The endpoints it uses
 
-| Step | Call |
-| --- | --- |
-| Register device | `POST /rental-devices` |
-| Go online | `POST /me/presence` |
-| Find work | `GET /jobs/nearby?lat=&lng=&radiusM=&class=byo.printer` |
-| Accept a job | `POST /market/byo.printer/orders/:id/accept` |
-| Go offline | `DELETE /me/presence` |
+| Step            | Call                                                    |
+| --------------- | ------------------------------------------------------- |
+| Register device | `POST /rental-devices`                                  |
+| Go online       | `POST /me/presence`                                     |
+| Find work       | `GET /jobs/nearby?lat=&lng=&radiusM=&class=byo.printer` |
+| Accept a job    | `POST /market/byo.printer/orders/:id/accept`            |
+| Go offline      | `DELETE /me/presence`                                   |
 
 All authenticated with your `cagi_` key as a `Bearer` token. A couple of payload
 details (the printer-native registration + the job's gcode field) are marked with
