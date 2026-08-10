@@ -46,7 +46,7 @@ camera-verifiable unit of work (a print) with a clean start/finish.
 ## Quickstart
 
 ```bash
-git clone https://github.com/commandAGI/commandagi-example-printer
+git clone https://github.com/CommandAGI/commandagi-example-printer
 cd commandagi-example-printer
 npm install
 cp .env.example .env          # then edit .env — paste your cagi_ key + serial port
